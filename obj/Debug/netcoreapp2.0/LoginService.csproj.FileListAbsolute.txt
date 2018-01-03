@@ -1,0 +1,10 @@
+f:\לימודים\שנה ג\סמסטר א\עקרונות ויישומי מחשוב ענן\project\LoginService\bin\Debug\netcoreapp2.0\LoginService.deps.json
+f:\לימודים\שנה ג\סמסטר א\עקרונות ויישומי מחשוב ענן\project\LoginService\bin\Debug\netcoreapp2.0\LoginService.runtimeconfig.json
+f:\לימודים\שנה ג\סמסטר א\עקרונות ויישומי מחשוב ענן\project\LoginService\bin\Debug\netcoreapp2.0\LoginService.runtimeconfig.dev.json
+f:\לימודים\שנה ג\סמסטר א\עקרונות ויישומי מחשוב ענן\project\LoginService\bin\Debug\netcoreapp2.0\LoginService.dll
+f:\לימודים\שנה ג\סמסטר א\עקרונות ויישומי מחשוב ענן\project\LoginService\bin\Debug\netcoreapp2.0\LoginService.pdb
+f:\לימודים\שנה ג\סמסטר א\עקרונות ויישומי מחשוב ענן\project\LoginService\obj\Debug\netcoreapp2.0\LoginService.csproj.CoreCompileInputs.cache
+f:\לימודים\שנה ג\סמסטר א\עקרונות ויישומי מחשוב ענן\project\LoginService\obj\Debug\netcoreapp2.0\LoginService.AssemblyInfoInputs.cache
+f:\לימודים\שנה ג\סמסטר א\עקרונות ויישומי מחשוב ענן\project\LoginService\obj\Debug\netcoreapp2.0\LoginService.AssemblyInfo.cs
+f:\לימודים\שנה ג\סמסטר א\עקרונות ויישומי מחשוב ענן\project\LoginService\obj\Debug\netcoreapp2.0\LoginService.dll
+f:\לימודים\שנה ג\סמסטר א\עקרונות ויישומי מחשוב ענן\project\LoginService\obj\Debug\netcoreapp2.0\LoginService.pdb
