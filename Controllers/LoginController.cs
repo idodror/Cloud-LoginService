@@ -26,14 +26,14 @@ namespace LoginService.Controllers
         [HttpPost]
         [Route("/WriteToCache")]
         public IEnumerable<String> WriteToCache([FromBody] Data data) {
-            cachingDB.StringSet(data.id.ToString(), Newtonsoft.Json.JsonConvert.SerializeObject(data));
+            cachingDB.StringSet("id:"+data.userID.ToString(), Newtonsoft.Json.JsonConvert.SerializeObject(data));
 
             return new List<string>{"ok"};
         }
 
         [HttpGet]
-        [Route("/ReadFromCache/{id:int}")]
-        public Data ReadFromCache(int id) {
+        [Route("/ReadFromCache/{id}")]
+        public Data ReadFromCache(string id) {
             Data d = Newtonsoft.Json.JsonConvert.DeserializeObject<Data>(cachingDB.StringGet(id.ToString()));
             return d;
         }
@@ -65,10 +65,11 @@ namespace LoginService.Controllers
 
         // POST api/values
         [HttpPost]
+        [Route("/Login")]
         public async Task<dynamic> Post([FromBody] User u)
         {
             var hc = Helpers.CouchDBConnect.GetClient("users");
-            var response = await hc.GetAsync("users/" + u._id);
+            var response = await hc.GetAsync("users/" + "id:" + u._id);
             if (response.IsSuccessStatusCode) {
                 User user = (User)JsonConvert.DeserializeObject(await response.Content.ReadAsStringAsync(), typeof(User));
                 if (user.password.Equals(u.password)) {
@@ -84,6 +85,16 @@ namespace LoginService.Controllers
                     );
 
                     await hc.PostAsync("users", htc);
+                    Data data = new Data();
+                    data.userID = u._id;
+                    data.tokenID = t._id;
+                    data.ttl = t.ttl;
+                    data.create = t.create;
+                    var res = WriteToCache(data);
+
+                    //debug
+                    Data getData = ReadFromCache("id:" + u._id);
+                    Console.WriteLine(getData.create + " from CASHE");
                     return t;
                 }
             }
@@ -101,7 +112,7 @@ namespace LoginService.Controllers
         }
 
         [HttpPost]
-        [Route("CreateUser")]
+        [Route("/CreateUser")]
         public async Task<int> CreateUser([FromBody] User u)
         {
             var doesExist = await DoesUserExist(u);
