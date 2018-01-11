@@ -104,7 +104,7 @@ namespace LoginService.Controllers
 
         async Task<Boolean> DoesUserExist(User u) {
             var hc = Helpers.CouchDBConnect.GetClient("users");
-            var response = await hc.GetAsync("users/" + u._id);
+            var response = await hc.GetAsync("users/id:" + u._id);
             if (response.IsSuccessStatusCode) {
                 return true;
             }
@@ -113,19 +113,18 @@ namespace LoginService.Controllers
 
         [HttpPost]
         [Route("/CreateUser")]
-        public async Task<int> CreateUser([FromBody] User u)
+        public async Task<String> CreateUser([FromBody] User u)
         {
             var doesExist = await DoesUserExist(u);
-            if (doesExist)
-            {
-                return -1;
+            if (doesExist) {
+                return "User already exist";
             }
 
             UserNoRev unr = new UserNoRev(u);
             var response = await Helpers.CouchDBConnect.PostToDB(unr, "users");
 
             Console.WriteLine(response);
-            return 1;
+            return "Created successfully";
         }
 
 
