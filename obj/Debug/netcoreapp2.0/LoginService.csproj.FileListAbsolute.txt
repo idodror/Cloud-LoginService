@@ -8,3 +8,13 @@ f:\לימודים\שנה ג\סמסטר א\עקרונות ויישומי מחשו
 f:\לימודים\שנה ג\סמסטר א\עקרונות ויישומי מחשוב ענן\project\LoginService\obj\Debug\netcoreapp2.0\LoginService.AssemblyInfo.cs
 f:\לימודים\שנה ג\סמסטר א\עקרונות ויישומי מחשוב ענן\project\LoginService\obj\Debug\netcoreapp2.0\LoginService.dll
 f:\לימודים\שנה ג\סמסטר א\עקרונות ויישומי מחשוב ענן\project\LoginService\obj\Debug\netcoreapp2.0\LoginService.pdb
+c:\Users\IdoD\MyProject\Cloud-LoginService\bin\Debug\netcoreapp2.0\LoginService.deps.json
+c:\Users\IdoD\MyProject\Cloud-LoginService\bin\Debug\netcoreapp2.0\LoginService.runtimeconfig.json
+c:\Users\IdoD\MyProject\Cloud-LoginService\bin\Debug\netcoreapp2.0\LoginService.runtimeconfig.dev.json
+c:\Users\IdoD\MyProject\Cloud-LoginService\bin\Debug\netcoreapp2.0\LoginService.dll
+c:\Users\IdoD\MyProject\Cloud-LoginService\bin\Debug\netcoreapp2.0\LoginService.pdb
+c:\Users\IdoD\MyProject\Cloud-LoginService\obj\Debug\netcoreapp2.0\LoginService.csproj.CoreCompileInputs.cache
+c:\Users\IdoD\MyProject\Cloud-LoginService\obj\Debug\netcoreapp2.0\LoginService.AssemblyInfoInputs.cache
+c:\Users\IdoD\MyProject\Cloud-LoginService\obj\Debug\netcoreapp2.0\LoginService.AssemblyInfo.cs
+c:\Users\IdoD\MyProject\Cloud-LoginService\obj\Debug\netcoreapp2.0\LoginService.dll
+c:\Users\IdoD\MyProject\Cloud-LoginService\obj\Debug\netcoreapp2.0\LoginService.pdb
