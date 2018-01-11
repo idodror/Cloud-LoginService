@@ -90,7 +90,7 @@ namespace LoginService.Controllers
                     data.tokenID = t._id;
                     data.ttl = t.ttl;
                     data.create = t.create;
-                    var res = WriteToCache(data);
+                    var res = WriteToCache(data); //Cashe
 
                     //debug
                     Data getData = ReadFromCache("id:" + u._id);
